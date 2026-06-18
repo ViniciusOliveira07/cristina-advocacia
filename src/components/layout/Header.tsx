@@ -3,7 +3,6 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const NAV = [
   { to: "/", label: "Home" },
@@ -61,9 +60,7 @@ export function Header() {
             </button>
           </SheetTrigger>
           <SheetContent side="right" className="w-72">
-            <VisuallyHidden>
-              <SheetTitle>Menu de navegação</SheetTitle>
-            </VisuallyHidden>
+            <SheetTitle className="sr-only">Menu de navegação</SheetTitle>
             <div className="mt-6 flex flex-col gap-1">
               {NAV.map((item) => (
                 <Link
