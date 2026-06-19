@@ -17,6 +17,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { SITE } from "@/lib/site";
 import { downloadVCard } from "@/lib/vcard";
+import { WhatsAppIcon } from "@/components/layout/WhatsAppWidget";
 import {
   MONTH_NAMES, WEEKDAY_SHORT, buildMonthGrid, slotsForDate,
 } from "@/lib/calendar";
@@ -162,7 +163,7 @@ function AgendarPage() {
 
           {/* Contato rápido */}
           <div className="mt-6 grid grid-cols-2 gap-2 sm:grid-cols-4">
-            <QuickLink href={SITE.whatsappUrl} label="WhatsApp" Icon={MessageCircle} />
+            <QuickLink href={SITE.whatsappUrl} label="WhatsApp" Icon={WhatsAppIcon} />
             <QuickLink href={`mailto:${SITE.email}`} label="E-mail" Icon={Mail} />
             <QuickLink href={SITE.linkedin} label="LinkedIn" Icon={Linkedin} />
             <QuickLink href={SITE.instagram} label="Instagram" Icon={Instagram} />
@@ -384,7 +385,7 @@ function Section({
 
 function QuickLink({
   href, label, Icon,
-}: { href: string; label: string; Icon: typeof MessageCircle }) {
+}: { href: string; label: string; Icon: React.ElementType }) {
   return (
     <a
       href={href}

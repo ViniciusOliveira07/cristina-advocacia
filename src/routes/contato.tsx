@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { toast } from "sonner";
 import { Clock, ExternalLink, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { WhatsAppIcon } from "@/components/layout/WhatsAppWidget";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -132,25 +133,30 @@ function ContatoPage() {
             </ul>
 
             <Button asChild className="mt-6" style={{ backgroundColor: "#25D366" }}>
-              <a href={SITE.whatsappUrl} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="h-4 w-4" /> Falar pelo WhatsApp
+              <a href={SITE.whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <WhatsAppIcon className="h-5 w-5" /> Falar pelo WhatsApp
               </a>
             </Button>
 
             <div className="mt-8 overflow-hidden rounded-lg border border-border bg-surface-alt">
-              <div className="grid h-48 place-items-center text-ink-muted">
-                <div className="text-center">
-                  <MapPin className="mx-auto h-8 w-8 text-primary" />
-                  <p className="mt-2 text-sm">{SITE.addressLine1}</p>
-                </div>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197500588647!2d-46.6366030248888!3d-23.538356978815197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce585721114059%3A0x8e8749fcb24c8033!2sR.%20Brigadeiro%20Tobias%2C%20577%20-%20Centro%20Hist%C3%B3rico%20de%20S%C3%A3o%20Paulo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001032-001!5e0!3m2!1spt-BR!2sbr!4v1718810000000!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="h-64 w-full object-cover"
+                title="Localização do Escritório"
+              ></iframe>
               <a
                 href={SITE.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-1 border-t border-border bg-card py-3 text-sm font-medium text-primary hover:bg-primary-light"
               >
-                Ver no Google Maps <ExternalLink className="h-3 w-3" />
+                Abrir no Google Maps <ExternalLink className="h-3 w-3" />
               </a>
             </div>
           </div>
