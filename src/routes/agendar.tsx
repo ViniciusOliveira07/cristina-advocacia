@@ -20,7 +20,7 @@ import { downloadVCard } from "@/lib/vcard";
 import {
   MONTH_NAMES, WEEKDAY_SHORT, buildMonthGrid, slotsForDate,
 } from "@/lib/calendar";
-import portrait from "@/assets/cristina-portrait.jpg";
+import portrait from "@/assets/cristina-portrait.jpg.asset.json";
 
 const areaSearch = z.object({
   area: z.enum(["trabalho", "civil", "familia"]).optional(),
@@ -144,7 +144,7 @@ function AgendarPage() {
           {/* Topo */}
           <div className="flex flex-col items-center text-center">
             <img
-              src={portrait}
+              src={portrait.url}
               alt={`Retrato de ${SITE.lawyer}`}
               loading="lazy"
               width={200}

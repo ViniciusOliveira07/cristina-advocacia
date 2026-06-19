@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { GraduationCap, BookOpen, Award, Shield, HandHeart, Eye, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { PageHero } from "@/components/sections/PageHero";
-import portrait from "@/assets/cristina-portrait.jpg";
+import portrait from "@/assets/cristina-portrait.jpg.asset.json";
 import { SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/sobre")({
@@ -54,7 +54,7 @@ function SobrePage() {
                 className="absolute -bottom-4 -left-4 h-full w-full rounded-lg bg-primary-light"
               />
               <img
-                src={portrait}
+                src={portrait.url}
                 alt="Retrato da Dra. Cristina Morgado"
                 loading="lazy"
                 width={800}

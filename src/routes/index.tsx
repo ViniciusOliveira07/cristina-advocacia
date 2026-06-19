@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { AreaSummaryCards } from "@/components/sections/AreaCards";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { Testimonials } from "@/components/sections/Testimonials";
-import portrait from "@/assets/cristina-portrait.jpg";
+import portrait from "@/assets/cristina-portrait.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -90,7 +90,7 @@ function Home() {
                 className="absolute -top-4 -right-4 h-full w-full rounded-xl bg-primary-light"
               />
               <img
-                src={portrait}
+                src={portrait.url}
                 alt="Retrato da Dra. Cristina Morgado"
                 width={800}
                 height={1000}
