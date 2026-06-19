@@ -4,6 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useLocation,
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
@@ -120,6 +121,7 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const location = useLocation();
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -129,7 +131,7 @@ function RootComponent() {
           <Outlet />
         </main>
         <Footer />
-        <WhatsAppWidget />
+        {location.pathname !== '/agendar' && <WhatsAppWidget />}
         <CookieBanner />
         <Toaster richColors position="top-right" />
       </div>
