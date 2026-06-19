@@ -144,7 +144,7 @@ function AgendarPage() {
           {/* Topo */}
           <div className="flex flex-col items-center text-center">
             <img
-              src={portrait}
+              src={portrait.url}
               alt={`Retrato de ${SITE.lawyer}`}
               loading="lazy"
               width={200}

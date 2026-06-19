@@ -90,7 +90,7 @@ function Home() {
                 className="absolute -top-4 -right-4 h-full w-full rounded-xl bg-primary-light"
               />
               <img
-                src={portrait}
+                src={portrait.url}
                 alt="Retrato da Dra. Cristina Morgado"
                 width={800}
                 height={1000}
