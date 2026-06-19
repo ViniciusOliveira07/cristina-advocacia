@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { GraduationCap, BookOpen, Award, Shield, HandHeart, Eye, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { PageHero } from "@/components/sections/PageHero";
-import portrait from "@/assets/cristina-portrait.jpg";
+import portrait from "@/assets/cristina-portrait.jpg.asset.json";
 import { SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/sobre")({
