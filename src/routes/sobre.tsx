@@ -54,7 +54,7 @@ function SobrePage() {
                 className="absolute -bottom-4 -left-4 h-full w-full rounded-lg bg-primary-light"
               />
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+                src="/cristina.jpg"
                 alt="Retrato da Dra. Cristina Morgado"
                 loading="lazy"
                 width={800}
