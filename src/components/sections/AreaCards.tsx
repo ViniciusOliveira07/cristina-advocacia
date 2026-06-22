@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Briefcase, Scale, Heart, type LucideIcon } from "lucide-react";
+import { HardHat, Landmark, Users, type LucideIcon } from "lucide-react";
 
 export type AreaSlug = "trabalho" | "civil" | "familia";
 
@@ -16,7 +16,7 @@ export const AREAS: {
     slug: "trabalho",
     name: "Direito do Trabalho",
     short: "Defesa de direitos trabalhistas com estratégia e clareza.",
-    icon: Briefcase,
+    icon: HardHat,
     description:
       "Atuação preventiva e contenciosa em demandas trabalhistas, com análise criteriosa de cada caso e foco em soluções que protejam o trabalhador.",
     services: [
@@ -46,7 +46,7 @@ export const AREAS: {
     slug: "civil",
     name: "Direito Civil",
     short: "Contratos, responsabilidade civil e indenizações.",
-    icon: Scale,
+    icon: Landmark,
     description:
       "Acompanhamento em conflitos cíveis com foco na proteção patrimonial e na reparação de danos, em negociações extrajudiciais e processos judiciais.",
     services: [
@@ -75,7 +75,7 @@ export const AREAS: {
     slug: "familia",
     name: "Direito de Família",
     short: "Acolhimento e técnica em momentos sensíveis.",
-    icon: Heart,
+    icon: Users,
     description:
       "Atuação humanizada em questões familiares e sucessórias, sempre buscando o caminho menos litigioso e mais protetivo para todas as partes envolvidas.",
     services: [
