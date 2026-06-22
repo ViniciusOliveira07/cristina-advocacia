@@ -61,7 +61,7 @@ function AreasPage() {
                 </Button>
               </div>
 
-              <div className="md:col-span-2">
+              <div className="md:col-span-2 flex flex-col justify-center">
                 <h3 className="font-serif text-lg text-ink">Principais serviços</h3>
                 <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                   {area.services.map((s) => (
