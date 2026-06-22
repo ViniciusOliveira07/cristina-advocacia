@@ -132,7 +132,7 @@ function RootComponent() {
         </main>
         <Footer />
         {location.pathname !== '/agendar' && <WhatsAppWidget />}
-        <CookieBanner />
+        {location.pathname !== '/agendar' && <CookieBanner />}
         <Toaster richColors position="top-right" />
       </div>
     </QueryClientProvider>
