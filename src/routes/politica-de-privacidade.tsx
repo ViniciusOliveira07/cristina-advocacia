@@ -24,28 +24,28 @@ function Privacy() {
       />
       <article className="mx-auto max-w-3xl space-y-6 px-4 py-16 text-ink-muted sm:px-6">
         <section>
-          <h2 className="mb-2 font-serif text-xl text-ink">1. Dados coletados</h2>
+          <h2 className="mb-2 font-sans text-xl text-ink">1. Dados coletados</h2>
           <p>
             Coletamos nome, e-mail, telefone e informações que você fornece em formulários de
             contato ou agendamento, exclusivamente para responder à sua solicitação.
           </p>
         </section>
         <section>
-          <h2 className="mb-2 font-serif text-xl text-ink">2. Finalidade</h2>
+          <h2 className="mb-2 font-sans text-xl text-ink">2. Finalidade</h2>
           <p>
             Os dados são utilizados para retorno de contato, agendamento de consultas e cumprimento
             de obrigações legais aplicáveis ao exercício da advocacia.
           </p>
         </section>
         <section>
-          <h2 className="mb-2 font-serif text-xl text-ink">3. Direitos do titular</h2>
+          <h2 className="mb-2 font-sans text-xl text-ink">3. Direitos do titular</h2>
           <p>
             Conforme a LGPD, você pode solicitar acesso, correção, anonimização ou eliminação dos
             seus dados a qualquer momento, mediante solicitação por e-mail.
           </p>
         </section>
         <section>
-          <h2 className="mb-2 font-serif text-xl text-ink">4. Contato</h2>
+          <h2 className="mb-2 font-sans text-xl text-ink">4. Contato</h2>
           <p>
             Para exercer seus direitos ou esclarecer dúvidas, escreva para
             contato@cristinamorgado.adv.br.

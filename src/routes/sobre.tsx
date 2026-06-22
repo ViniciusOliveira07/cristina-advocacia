@@ -68,7 +68,7 @@ function SobrePage() {
             <Badge className="bg-primary-light text-primary hover:bg-primary-light">
               <Award className="mr-1 h-3 w-3" /> {SITE.oab}
             </Badge>
-            <h2 className="mt-4 font-serif text-3xl text-ink">Uma advocacia próxima e estratégica</h2>
+            <h2 className="mt-4 font-sans text-3xl text-ink">Uma advocacia próxima e estratégica</h2>
             <div className="mt-6 space-y-4 text-ink-muted">
               <p>
                 Há mais de quinze anos atuando em São Paulo, a Dra. Cristina Morgado construiu uma
@@ -96,7 +96,7 @@ function SobrePage() {
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
               Formação
             </p>
-            <h2 className="font-serif text-3xl text-ink">Formação acadêmica</h2>
+            <h2 className="font-sans text-3xl text-ink">Formação acadêmica</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {FORMACAO.map((f) => (
@@ -104,7 +104,7 @@ function SobrePage() {
                 <div className="grid h-11 w-11 place-items-center rounded-md bg-primary-light text-primary">
                   <GraduationCap className="h-5 w-5" />
                 </div>
-                <h3 className="mt-4 font-serif text-lg">{f.title}</h3>
+                <h3 className="mt-4 font-sans text-lg">{f.title}</h3>
                 <p className="mt-1 text-sm text-ink-muted">{f.inst}</p>
                 <p className="mt-2 inline-flex items-center gap-1 text-xs text-primary">
                   <BookOpen className="h-3 w-3" /> {f.year}
@@ -121,7 +121,7 @@ function SobrePage() {
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-white/70 uppercase">
               Princípios
             </p>
-            <h2 className="font-serif text-3xl text-white">Valores profissionais</h2>
+            <h2 className="font-sans text-3xl text-white">Valores profissionais</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-4">
             {VALORES.map((v) => (
@@ -129,7 +129,7 @@ function SobrePage() {
                 <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-white/10 text-white">
                   <v.icon className="h-7 w-7" />
                 </div>
-                <h3 className="mt-4 font-serif text-xl text-white">{v.title}</h3>
+                <h3 className="mt-4 font-sans text-xl text-white">{v.title}</h3>
                 <p className="mt-2 text-sm text-white/80">{v.text}</p>
               </div>
             ))}

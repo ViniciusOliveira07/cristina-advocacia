@@ -61,7 +61,7 @@ function Home() {
               <p className="mb-4 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
                 Advocacia em São Paulo
               </p>
-              <h1 className="font-serif text-4xl leading-tight text-ink sm:text-5xl lg:text-[3.25rem]">
+              <h1 className="font-sans text-4xl leading-tight text-ink sm:text-5xl lg:text-[3.25rem]">
                 Advocacia com comprometimento e dedicação ao seu caso.
               </h1>
             </div>
@@ -113,7 +113,7 @@ function Home() {
                 <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-primary-light text-primary">
                   <d.icon className="h-7 w-7" />
                 </div>
-                <h3 className="mt-5 font-serif text-xl">{d.title}</h3>
+                <h3 className="mt-5 font-sans text-xl">{d.title}</h3>
                 <p className="mt-2 text-sm text-ink-muted">{d.text}</p>
               </div>
             ))}

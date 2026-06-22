@@ -114,7 +114,7 @@ function AgendarPage() {
             <div className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-green-100 text-green-600">
               <CheckCircle2 className="h-9 w-9" />
             </div>
-            <h1 className="mt-5 font-serif text-2xl text-ink">Solicitação recebida!</h1>
+            <h1 className="mt-5 font-sans text-2xl text-ink">Solicitação recebida!</h1>
             <p className="mt-2 text-sm text-ink-muted">
               Você receberá um e-mail de confirmação em breve.
             </p>
@@ -152,7 +152,7 @@ function AgendarPage() {
               height={200}
               className="h-24 w-24 rounded-full border-[3px] border-primary object-cover"
             />
-            <h1 className="mt-4 font-serif text-2xl text-primary">{SITE.lawyer}</h1>
+            <h1 className="mt-4 font-sans text-2xl text-primary">{SITE.lawyer}</h1>
             <p className="text-sm text-ink-muted">{SITE.oab}</p>
             <div className="mt-3 flex flex-wrap justify-center gap-2">
               <Badge variant="outline" className="border-primary/30 text-primary">Trabalhista</Badge>
@@ -181,7 +181,7 @@ function AgendarPage() {
 
           {/* Agendamento */}
           <div>
-            <h2 className="font-serif text-xl text-ink">Agendar uma Consulta</h2>
+            <h2 className="font-sans text-xl text-ink">Agendar uma Consulta</h2>
             <p className="mt-1 text-sm text-ink-muted">
               Escolha o tipo de atendimento, selecione uma data e horário disponíveis.
               {area && (

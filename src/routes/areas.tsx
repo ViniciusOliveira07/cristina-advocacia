@@ -49,7 +49,7 @@ function AreasPage() {
                 <div className="grid h-14 w-14 place-items-center rounded-md bg-primary-light text-primary">
                   <area.icon className="h-7 w-7" />
                 </div>
-                <h2 className="mt-5 font-serif text-2xl text-ink">{area.name}</h2>
+                <h2 className="mt-5 font-sans text-2xl text-ink">{area.name}</h2>
                 <p className="mt-3 text-sm text-ink-muted">{area.description}</p>
                 <Button asChild className="mt-6">
                   <Link
@@ -62,7 +62,7 @@ function AreasPage() {
               </div>
 
               <div className="md:col-span-2 flex flex-col justify-center">
-                <h3 className="font-serif text-lg text-ink">Principais serviços</h3>
+                <h3 className="font-sans text-lg text-ink">Principais serviços</h3>
                 <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                   {area.services.map((s) => (
                     <li key={s} className="flex items-start gap-2 text-sm text-ink">
@@ -83,12 +83,12 @@ function AreasPage() {
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
               Dúvidas frequentes
             </p>
-            <h2 className="font-serif text-3xl text-ink">Perguntas e respostas por área</h2>
+            <h2 className="font-sans text-3xl text-ink">Perguntas e respostas por área</h2>
           </div>
 
           {AREAS.map((area) => (
             <div key={area.slug} className="mb-8">
-              <h3 className="mb-3 font-serif text-xl text-primary">{area.name}</h3>
+              <h3 className="mb-3 font-sans text-xl text-primary">{area.name}</h3>
               <Accordion type="single" collapsible className="rounded-lg border border-border bg-card">
                 {area.faq.map((item, i) => (
                   <AccordionItem key={i} value={`${area.slug}-${i}`} className="px-4">

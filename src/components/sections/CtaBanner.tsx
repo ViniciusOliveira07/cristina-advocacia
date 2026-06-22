@@ -5,7 +5,7 @@ export function CtaBanner() {
   return (
     <section className="bg-primary text-white">
       <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
-        <h2 className="font-serif text-3xl text-white sm:text-4xl">
+        <h2 className="font-sans text-3xl text-white sm:text-4xl">
           Tem uma questão jurídica? Vamos conversar.
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-white/85">

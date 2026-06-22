@@ -110,7 +110,7 @@ export function AreaSummaryCards() {
           <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
             Especialidades
           </p>
-          <h2 className="font-serif text-3xl text-ink sm:text-4xl">Áreas de Atuação</h2>
+          <h2 className="font-sans text-3xl text-ink sm:text-4xl">Áreas de Atuação</h2>
           <p className="mt-4 text-ink-muted">
             Soluções jurídicas com escuta atenta e estratégia adaptada ao seu caso.
           </p>
@@ -124,7 +124,7 @@ export function AreaSummaryCards() {
               <div className="grid h-12 w-12 place-items-center rounded-md bg-primary-light text-primary">
                 <a.icon className="h-6 w-6" />
               </div>
-              <h3 className="mt-5 font-serif text-xl">{a.name}</h3>
+              <h3 className="mt-5 font-sans text-xl">{a.name}</h3>
               <p className="mt-2 text-sm text-ink-muted">{a.short}</p>
               <Link
                 to="/areas"

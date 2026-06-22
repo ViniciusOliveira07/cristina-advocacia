@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="bg-footer text-white/80">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4">
         <div className="md:col-span-2">
-          <p className="font-serif text-2xl text-white">Cristina Morgado</p>
+          <p className="font-sans text-2xl text-white">Cristina Morgado</p>
           <p className="text-xs font-light tracking-[0.25em] text-white/60 uppercase">Advocacia</p>
           <p className="mt-4 max-w-sm text-sm">{SITE.tagline}</p>
           <div className="mt-5 flex gap-3">

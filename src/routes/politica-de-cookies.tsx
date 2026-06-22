@@ -24,14 +24,14 @@ function Cookies() {
       />
       <article className="mx-auto max-w-3xl space-y-6 px-4 py-16 text-ink-muted sm:px-6">
         <section>
-          <h2 className="mb-2 font-serif text-xl text-ink">O que são cookies</h2>
+          <h2 className="mb-2 font-sans text-xl text-ink">O que são cookies</h2>
           <p>
             Cookies são pequenos arquivos armazenados no seu navegador para melhorar sua
             experiência durante a navegação.
           </p>
         </section>
         <section>
-          <h2 className="mb-2 font-serif text-xl text-ink">Tipos utilizados</h2>
+          <h2 className="mb-2 font-sans text-xl text-ink">Tipos utilizados</h2>
           <ul className="list-disc space-y-2 pl-5">
             <li><strong>Essenciais:</strong> necessários ao funcionamento do site.</li>
             <li><strong>Preferências:</strong> guardam, por exemplo, o seu consentimento.</li>
@@ -39,7 +39,7 @@ function Cookies() {
           </ul>
         </section>
         <section>
-          <h2 className="mb-2 font-serif text-xl text-ink">Gerenciamento</h2>
+          <h2 className="mb-2 font-sans text-xl text-ink">Gerenciamento</h2>
           <p>
             Você pode revogar seu consentimento limpando o armazenamento local do navegador. As
             configurações também podem ser ajustadas diretamente no navegador.

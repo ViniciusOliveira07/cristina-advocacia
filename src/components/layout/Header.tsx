@@ -14,7 +14,7 @@ const NAV = [
 function Logo() {
   return (
     <Link to="/" className="flex flex-col leading-none" aria-label="Página inicial">
-      <span className="font-serif text-xl text-primary sm:text-2xl">Cristina Morgado</span>
+      <span className="font-sans text-xl text-primary sm:text-2xl">Cristina Morgado</span>
       <span className="text-[0.65rem] font-light tracking-[0.25em] text-primary/70 uppercase">
         Advocacia
       </span>

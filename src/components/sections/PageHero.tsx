@@ -37,7 +37,7 @@ export function PageHero({
             {eyebrow}
           </p>
         )}
-        <h1 className="font-serif text-4xl text-ink sm:text-5xl">{title}</h1>
+        <h1 className="font-sans text-4xl text-ink sm:text-5xl">{title}</h1>
         {subtitle && (
           <p className="mt-4 max-w-2xl text-base text-ink-muted sm:text-lg">{subtitle}</p>
         )}

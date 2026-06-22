@@ -26,7 +26,7 @@ export function Testimonials() {
           <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
             Depoimentos
           </p>
-          <h2 className="font-serif text-3xl text-ink sm:text-4xl">O que dizem os clientes</h2>
+          <h2 className="font-sans text-3xl text-ink sm:text-4xl">O que dizem os clientes</h2>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {ITEMS.map((t, i) => (
@@ -37,7 +37,7 @@ export function Testimonials() {
               <Quote className="h-7 w-7 text-primary/40" />
               <blockquote className="mt-4 flex-1 text-sm text-ink">{t.text}</blockquote>
               <figcaption className="mt-6 border-t border-border pt-4">
-                <p className="font-serif text-base text-primary">{t.name}</p>
+                <p className="font-sans text-base text-primary">{t.name}</p>
                 <p className="text-xs text-ink-muted">{t.area}</p>
               </figcaption>
             </figure>

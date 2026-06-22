@@ -90,7 +90,7 @@ function ContatoPage() {
         <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2">
           {/* Infos */}
           <div>
-            <h2 className="font-serif text-2xl text-ink">Informações de contato</h2>
+            <h2 className="font-sans text-2xl text-ink">Informações de contato</h2>
             <ul className="mt-6 space-y-5">
               <li className="flex items-start gap-3">
                 <span className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-primary-light text-primary">
@@ -167,7 +167,7 @@ function ContatoPage() {
             className="rounded-xl border border-border bg-card p-6 shadow-sm sm:p-8"
             noValidate
           >
-            <h2 className="font-serif text-2xl text-ink">Envie uma mensagem</h2>
+            <h2 className="font-sans text-2xl text-ink">Envie uma mensagem</h2>
             <p className="mt-1 text-sm text-ink-muted">
               Retornamos em até 1 dia útil.
             </p>
