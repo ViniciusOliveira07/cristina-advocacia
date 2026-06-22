@@ -63,7 +63,7 @@ function AreasPage() {
 
               <div className="md:col-span-2">
                 <h3 className="font-serif text-lg text-ink">Principais serviços</h3>
-                <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+                <ul className="mt-4 grid gap-3 sm:grid-cols-2 sm:[&>li:last-child:nth-child(odd)]:col-span-2 sm:[&>li:last-child:nth-child(odd)]:justify-self-center">
                   {area.services.map((s) => (
                     <li key={s} className="flex items-start gap-2 text-sm text-ink">
                       <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
