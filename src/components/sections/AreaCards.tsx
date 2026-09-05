@@ -106,34 +106,41 @@ export function AreaSummaryCards() {
   return (
     <section className="bg-background py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="mx-auto mb-12 max-w-2xl text-center">
-          <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
-            Especialidades
-          </p>
-          <h2 className="font-sans text-3xl text-ink sm:text-4xl">Áreas de Atuação</h2>
-          <p className="mt-4 text-ink-muted">
+        <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
+              Especialidades
+            </p>
+            <h2 className="font-sans text-3xl text-ink sm:text-4xl">Áreas de Atuação</h2>
+          </div>
+          <p className="max-w-sm text-sm text-ink-muted sm:text-right">
             Soluções jurídicas com escuta atenta e estratégia adaptada ao seu caso.
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
-          {AREAS.map((a) => (
-            <div
+        <div className="divide-y divide-border border-y border-border">
+          {AREAS.map((a, i) => (
+            <Link
               key={a.slug}
-              className="group flex flex-col rounded-lg border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md"
+              to="/areas"
+              className="group grid grid-cols-[auto_1fr_auto] items-center gap-4 py-6 sm:gap-8 sm:py-7"
             >
-              <div className="grid h-12 w-12 place-items-center rounded-md bg-primary-light text-primary">
-                <a.icon className="h-6 w-6" />
+              <span className="font-sans text-2xl text-primary/30 sm:text-3xl">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <div className="min-w-0">
+                <h3 className="font-sans text-lg text-ink sm:text-xl">{a.name}</h3>
+                <p className="mt-1 text-sm text-ink-muted">{a.short}</p>
               </div>
-              <h3 className="mt-5 font-sans text-xl">{a.name}</h3>
-              <p className="mt-2 text-sm text-ink-muted">{a.short}</p>
-              <Link
-                to="/areas"
-                className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-dark"
-              >
+              <span className="hidden shrink-0 items-center gap-1 text-sm font-medium text-primary sm:inline-flex">
                 Saiba mais
-                <span aria-hidden>→</span>
-              </Link>
-            </div>
+                <span
+                  aria-hidden
+                  className="transition-transform group-hover:translate-x-1"
+                >
+                  →
+                </span>
+              </span>
+            </Link>
           ))}
         </div>
       </div>

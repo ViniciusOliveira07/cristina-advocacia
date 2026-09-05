@@ -104,14 +104,20 @@ function Home() {
       {/* Diferenciais */}
       <section className="bg-surface-alt py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid gap-6 md:grid-cols-3">
-            {DIFFS.map((d) => (
-              <div
-                key={d.title}
-                className="rounded-lg border border-border bg-card p-6 text-center shadow-sm"
-              >
-                <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-primary-light text-primary">
-                  <d.icon className="h-7 w-7" />
+          <div className="mb-10 max-w-xl">
+            <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
+              Por que escolher
+            </p>
+            <h2 className="font-sans text-3xl text-ink">O que diferencia o atendimento</h2>
+          </div>
+          <div className="grid divide-y divide-border border-t border-border md:grid-cols-3 md:divide-x md:divide-y-0 md:border-x">
+            {DIFFS.map((d, i) => (
+              <div key={d.title} className="flex flex-col px-1 py-8 md:px-8">
+                <div className="flex items-baseline gap-4">
+                  <span className="font-sans text-4xl leading-none text-primary/25">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <d.icon className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="mt-5 font-sans text-xl">{d.title}</h3>
                 <p className="mt-2 text-sm text-ink-muted">{d.text}</p>

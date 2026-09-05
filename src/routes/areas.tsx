@@ -32,24 +32,28 @@ function AreasPage() {
     <>
       <PageHero
         eyebrow="Especialidades"
+        index="02"
         title="Áreas de Atuação"
         subtitle="Atuação especializada para proteger seus direitos."
         breadcrumbs={[{ label: "Home", to: "/" }, { label: "Áreas" }]}
       />
 
       <section className="bg-background py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl space-y-10 px-4 sm:px-6">
-          {AREAS.map((area) => (
+        <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6">
+          {AREAS.map((area, i) => (
             <article
               key={area.slug}
               id={area.slug}
-              className="grid gap-8 rounded-xl border border-border bg-card p-6 shadow-sm md:grid-cols-3 md:p-10"
+              className="grid gap-8 border-t-2 border-primary pt-8 md:grid-cols-3 md:gap-10"
             >
               <div className="md:col-span-1">
-                <div className="grid h-14 w-14 place-items-center rounded-md bg-primary-light text-primary">
-                  <area.icon className="h-7 w-7" />
+                <div className="flex items-baseline gap-3">
+                  <span className="font-sans text-3xl text-primary/25">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <area.icon className="h-5 w-5 text-primary" />
                 </div>
-                <h2 className="mt-5 font-sans text-2xl text-ink">{area.name}</h2>
+                <h2 className="mt-4 font-sans text-2xl text-ink">{area.name}</h2>
                 <p className="mt-3 text-sm text-ink-muted">{area.description}</p>
                 <Button asChild className="mt-6">
                   <Link
@@ -79,7 +83,7 @@ function AreasPage() {
 
       <section className="bg-surface-alt py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <div className="mb-10 text-center">
+          <div className="mb-10 max-w-xl">
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
               Dúvidas frequentes
             </p>

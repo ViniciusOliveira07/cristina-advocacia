@@ -81,6 +81,7 @@ function ContatoPage() {
     <>
       <PageHero
         eyebrow="Fale conosco"
+        index="03"
         title="Contato"
         subtitle="Estamos à disposição para ouvir sua questão."
         breadcrumbs={[{ label: "Home", to: "/" }, { label: "Contato" }]}
@@ -91,29 +92,23 @@ function ContatoPage() {
           {/* Infos */}
           <div>
             <h2 className="font-sans text-2xl text-ink">Informações de contato</h2>
-            <ul className="mt-6 space-y-5">
-              <li className="flex items-start gap-3">
-                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-primary-light text-primary">
-                  <MapPin className="h-5 w-5" />
-                </span>
+            <ul className="mt-6 divide-y divide-border border-y border-border">
+              <li className="flex items-start gap-3 py-4">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 <div className="text-sm">
                   <p className="font-medium text-ink">Endereço</p>
                   <p className="text-ink-muted">{SITE.addressLine1}<br />{SITE.addressLine2}</p>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
-                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-primary-light text-primary">
-                  <Phone className="h-5 w-5" />
-                </span>
+              <li className="flex items-start gap-3 py-4">
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 <div className="text-sm">
                   <p className="font-medium text-ink">Telefone</p>
                   <p className="text-ink-muted">{SITE.phoneDisplay}</p>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
-                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-primary-light text-primary">
-                  <Mail className="h-5 w-5" />
-                </span>
+              <li className="flex items-start gap-3 py-4">
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 <div className="text-sm">
                   <p className="font-medium text-ink">E-mail</p>
                   <a href={`mailto:${SITE.email}`} className="text-primary hover:underline">
@@ -121,10 +116,8 @@ function ContatoPage() {
                   </a>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
-                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-primary-light text-primary">
-                  <Clock className="h-5 w-5" />
-                </span>
+              <li className="flex items-start gap-3 py-4">
+                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 <div className="text-sm">
                   <p className="font-medium text-ink">Horário</p>
                   <p className="text-ink-muted">{SITE.hours}</p>
