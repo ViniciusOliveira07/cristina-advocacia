@@ -15,8 +15,8 @@ const NAV = [
 function Logo() {
   return (
     <Link to="/" className="flex flex-col leading-none" aria-label="Página inicial">
-      <span className="font-sans text-xl text-primary sm:text-2xl">Cristina Morgado</span>
-      <span className="text-[0.65rem] font-light tracking-[0.25em] text-primary/70 uppercase">
+      <span className="font-serif text-2xl text-ink sm:text-[1.75rem]">Cristina Morgado</span>
+      <span className="mt-1 text-[0.65rem] font-medium tracking-[0.3em] text-primary uppercase">
         Advocacia
       </span>
     </Link>
@@ -44,13 +44,13 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:h-20">
         <Logo />
 
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Principal">
+        <nav className="hidden h-full items-stretch gap-9 lg:flex" aria-label="Principal">
           {NAV.map((item) => (
             <Link
               key={item.to}
               to={item.to}
-              className="text-sm font-medium text-ink transition-colors hover:text-primary"
-              activeProps={{ className: "text-primary" }}
+              className="flex items-center border-b-2 border-transparent text-sm font-medium tracking-wide text-ink transition-colors hover:text-primary"
+              activeProps={{ className: "!border-primary text-primary" }}
               activeOptions={{ exact: item.to === "/" }}
             >
               {item.label}

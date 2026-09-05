@@ -26,7 +26,7 @@ export function Testimonials() {
           <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
             Depoimentos
           </p>
-          <h2 className="font-sans text-3xl text-ink sm:text-4xl lg:text-5xl">O que dizem os clientes</h2>
+          <h2 className="font-serif text-3xl text-ink sm:text-4xl lg:text-5xl">O que dizem os clientes</h2>
         </div>
         <div className="grid gap-10 divide-y divide-border md:grid-cols-3 md:gap-8 md:divide-x md:divide-y-0">
           {ITEMS.map((t, i) => (

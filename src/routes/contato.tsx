@@ -91,7 +91,7 @@ function ContatoPage() {
         <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2">
           {/* Infos */}
           <div>
-            <h2 className="font-sans text-2xl text-ink">Informações de contato</h2>
+            <h2 className="font-serif text-2xl text-ink">Informações de contato</h2>
             <ul className="mt-6 divide-y divide-border border-y border-border">
               <li className="flex items-start gap-3 py-4">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
@@ -157,10 +157,10 @@ function ContatoPage() {
           {/* Form */}
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="rounded-xl border border-border bg-card p-6 shadow-sm sm:p-8"
+            className="border border-border bg-card p-6 sm:p-8"
             noValidate
           >
-            <h2 className="font-sans text-2xl text-ink">Envie uma mensagem</h2>
+            <h2 className="font-serif text-2xl text-ink">Envie uma mensagem</h2>
             <p className="mt-1 text-sm text-ink-muted">
               Retornamos em até 1 dia útil.
             </p>

@@ -23,7 +23,7 @@ function NotFoundComponent() {
   return (
     <div className="flex min-h-[60vh] items-center justify-center bg-background px-4 py-20">
       <div className="max-w-md text-center">
-        <h1 className="font-sans text-7xl text-primary">404</h1>
+        <h1 className="font-serif text-7xl text-primary">404</h1>
         <h2 className="mt-4 text-xl font-semibold text-ink">Página não encontrada</h2>
         <p className="mt-2 text-sm text-ink-muted">
           A página que você procura não existe ou foi movida.
@@ -51,7 +51,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="flex min-h-[60vh] items-center justify-center bg-background px-4 py-20">
       <div className="max-w-md text-center">
-        <h1 className="font-sans text-2xl text-ink">Esta página não carregou</h1>
+        <h1 className="font-serif text-2xl text-ink">Esta página não carregou</h1>
         <p className="mt-2 text-sm text-ink-muted">
           Algo deu errado. Tente novamente ou volte ao início.
         </p>
@@ -96,7 +96,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap",
       },
     ],
   }),

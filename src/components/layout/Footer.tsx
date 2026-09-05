@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="bg-footer text-white/80">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4">
         <div className="md:col-span-2">
-          <p className="font-sans text-2xl text-white">Cristina Morgado</p>
+          <p className="font-serif text-2xl text-white">Cristina Morgado</p>
           <p className="text-xs font-light tracking-[0.25em] text-white/60 uppercase">Advocacia</p>
           <p className="mt-4 max-w-sm text-sm">{SITE.tagline}</p>
           <div className="mt-5 flex gap-3">
@@ -33,7 +33,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="mb-3 font-sans text-sm font-semibold tracking-wide text-white uppercase">
+          <h4 className="mb-3 font-serif text-sm font-semibold tracking-wide text-white uppercase">
             Navegação
           </h4>
           <ul className="space-y-2 text-sm">
@@ -46,7 +46,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="mb-3 font-sans text-sm font-semibold tracking-wide text-white uppercase">
+          <h4 className="mb-3 font-serif text-sm font-semibold tracking-wide text-white uppercase">
             Contato
           </h4>
           <ul className="space-y-3 text-sm">

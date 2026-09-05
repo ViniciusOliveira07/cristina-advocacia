@@ -49,18 +49,14 @@ function SobrePage() {
       <section className="bg-background py-16 sm:py-20">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <div className="relative mx-auto max-w-sm">
-              <div
-                aria-hidden
-                className="absolute -bottom-4 -left-4 h-full w-full rounded-lg bg-primary-light"
-              />
+            <div className="mx-auto max-w-sm border border-border">
               <img
                 src="/cristina.jpg"
                 alt="Retrato da Dra. Cristina Morgado"
                 loading="lazy"
                 width={800}
                 height={1000}
-                className="relative aspect-[3/4] w-full rounded-lg border-2 border-primary object-cover shadow-sm"
+                className="aspect-[3/4] w-full object-cover"
               />
             </div>
           </div>
@@ -69,7 +65,7 @@ function SobrePage() {
             <Badge className="bg-primary-light text-primary hover:bg-primary-light">
               <Award className="mr-1 h-3 w-3" /> {SITE.oab}
             </Badge>
-            <h2 className="mt-4 font-sans text-3xl text-ink sm:text-4xl">Uma advocacia próxima e estratégica</h2>
+            <h2 className="mt-4 font-serif text-3xl text-ink sm:text-4xl">Uma advocacia próxima e estratégica</h2>
             <div className="mt-6 space-y-4 text-ink-muted">
               <p>
                 Há mais de quinze anos atuando em São Paulo, a Dra. Cristina Morgado construiu uma
@@ -97,7 +93,7 @@ function SobrePage() {
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
               Formação
             </p>
-            <h2 className="font-sans text-3xl text-ink sm:text-4xl">Formação acadêmica</h2>
+            <h2 className="font-serif text-3xl text-ink sm:text-4xl">Formação acadêmica</h2>
           </div>
           <div className="border-l border-border pl-8 sm:pl-10">
             {FORMACAO.map((f, i) => (
@@ -109,7 +105,7 @@ function SobrePage() {
                 <p className="font-sans text-sm font-semibold tracking-wide text-primary">
                   {f.year}
                 </p>
-                <h3 className="mt-1 font-sans text-lg text-ink">{f.title}</h3>
+                <h3 className="mt-1 font-serif text-lg text-ink">{f.title}</h3>
                 <p className="mt-1 text-sm text-ink-muted">{f.inst}</p>
               </div>
             ))}
@@ -123,14 +119,14 @@ function SobrePage() {
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-white/70 uppercase">
               Princípios
             </p>
-            <h2 className="font-sans text-3xl text-white sm:text-4xl">Valores profissionais</h2>
+            <h2 className="font-serif text-3xl text-white sm:text-4xl">Valores profissionais</h2>
           </div>
           <div className="grid divide-y divide-white/15 lg:grid-cols-4 lg:divide-x lg:divide-y-0">
             {VALORES.map((v) => (
               <div key={v.title} className="flex items-start gap-3 py-6 first:pt-0 lg:px-8 lg:py-0 lg:first:pl-0">
                 <v.icon className="mt-1 h-5 w-5 shrink-0 text-white/60" />
                 <div>
-                  <h3 className="font-sans text-lg text-white">{v.title}</h3>
+                  <h3 className="font-serif text-lg text-white">{v.title}</h3>
                   <p className="mt-1 text-sm text-white/75">{v.text}</p>
                 </div>
               </div>

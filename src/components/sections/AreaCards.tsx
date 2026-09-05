@@ -111,7 +111,7 @@ export function AreaSummaryCards() {
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
               Especialidades
             </p>
-            <h2 className="font-sans text-3xl text-ink sm:text-4xl lg:text-5xl">Áreas de Atuação</h2>
+            <h2 className="font-serif text-3xl text-ink sm:text-4xl lg:text-5xl">Áreas de Atuação</h2>
           </div>
           <p className="max-w-sm text-sm text-ink-muted sm:text-right">
             Soluções jurídicas com escuta atenta e estratégia adaptada ao seu caso.
@@ -128,7 +128,7 @@ export function AreaSummaryCards() {
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div className="min-w-0">
-                <h3 className="font-sans text-lg text-ink sm:text-xl">{a.name}</h3>
+                <h3 className="font-serif text-lg text-ink sm:text-xl">{a.name}</h3>
                 <p className="mt-1 text-sm text-ink-muted">{a.short}</p>
               </div>
               <span className="hidden shrink-0 items-center gap-1 text-sm font-medium text-primary sm:inline-flex">
