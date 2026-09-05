@@ -111,7 +111,7 @@ export function AreaSummaryCards() {
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
               Especialidades
             </p>
-            <h2 className="font-sans text-3xl text-ink sm:text-4xl">Áreas de Atuação</h2>
+            <h2 className="font-sans text-3xl text-ink sm:text-4xl lg:text-5xl">Áreas de Atuação</h2>
           </div>
           <p className="max-w-sm text-sm text-ink-muted sm:text-right">
             Soluções jurídicas com escuta atenta e estratégia adaptada ao seu caso.

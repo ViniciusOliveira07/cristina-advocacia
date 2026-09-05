@@ -7,7 +7,7 @@ export function CookieBanner() {
   if (!ready || consent !== null) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-[90] px-3 pb-3 sm:px-6 sm:pb-6">
+    <div className="fixed inset-x-0 bottom-16 z-[90] px-3 pb-3 sm:px-6 sm:pb-6 lg:bottom-0">
       <div className="mx-auto max-w-4xl rounded-lg border border-border bg-white p-4 shadow-lg sm:p-5">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <p className="text-sm text-ink-muted">

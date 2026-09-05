@@ -87,7 +87,7 @@ function AreasPage() {
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
               Dúvidas frequentes
             </p>
-            <h2 className="font-sans text-3xl text-ink">Perguntas e respostas por área</h2>
+            <h2 className="font-sans text-3xl text-ink sm:text-4xl">Perguntas e respostas por área</h2>
           </div>
 
           {AREAS.map((area) => (

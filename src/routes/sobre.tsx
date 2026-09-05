@@ -69,7 +69,7 @@ function SobrePage() {
             <Badge className="bg-primary-light text-primary hover:bg-primary-light">
               <Award className="mr-1 h-3 w-3" /> {SITE.oab}
             </Badge>
-            <h2 className="mt-4 font-sans text-3xl text-ink">Uma advocacia próxima e estratégica</h2>
+            <h2 className="mt-4 font-sans text-3xl text-ink sm:text-4xl">Uma advocacia próxima e estratégica</h2>
             <div className="mt-6 space-y-4 text-ink-muted">
               <p>
                 Há mais de quinze anos atuando em São Paulo, a Dra. Cristina Morgado construiu uma
@@ -97,7 +97,7 @@ function SobrePage() {
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-primary uppercase">
               Formação
             </p>
-            <h2 className="font-sans text-3xl text-ink">Formação acadêmica</h2>
+            <h2 className="font-sans text-3xl text-ink sm:text-4xl">Formação acadêmica</h2>
           </div>
           <div className="border-l border-border pl-8 sm:pl-10">
             {FORMACAO.map((f, i) => (
@@ -123,7 +123,7 @@ function SobrePage() {
             <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-white/70 uppercase">
               Princípios
             </p>
-            <h2 className="font-sans text-3xl text-white">Valores profissionais</h2>
+            <h2 className="font-sans text-3xl text-white sm:text-4xl">Valores profissionais</h2>
           </div>
           <div className="grid divide-y divide-white/15 lg:grid-cols-4 lg:divide-x lg:divide-y-0">
             {VALORES.map((v) => (

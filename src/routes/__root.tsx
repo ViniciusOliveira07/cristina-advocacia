@@ -15,6 +15,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppWidget } from "@/components/layout/WhatsAppWidget";
+import { MobileCtaBar } from "@/components/layout/MobileCtaBar";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import { Toaster } from "@/components/ui/sonner";
 
@@ -127,11 +128,12 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col bg-background">
         <Header />
-        <main className="flex-1">
+        <main className="flex-1 pb-16 lg:pb-0">
           <Outlet />
         </main>
         <Footer />
         {location.pathname !== '/agendar' && <WhatsAppWidget />}
+        {location.pathname !== '/agendar' && <MobileCtaBar />}
         {location.pathname !== '/agendar' && <CookieBanner />}
         <Toaster richColors position="top-right" />
       </div>

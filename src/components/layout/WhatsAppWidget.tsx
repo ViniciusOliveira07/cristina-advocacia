@@ -27,7 +27,7 @@ export function WhatsAppWidget() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Fale pelo WhatsApp"
-            className="animate-wa-pulse fixed right-6 bottom-6 z-[100] grid h-14 w-14 place-items-center rounded-full text-white shadow-lg ring-1 ring-black/5 transition-transform hover:scale-105"
+            className="animate-wa-pulse fixed right-6 bottom-6 z-[100] hidden h-14 w-14 place-items-center rounded-full text-white shadow-lg ring-1 ring-black/5 transition-transform hover:scale-105 lg:grid"
             style={{ backgroundColor: "#25D366" }}
           >
             <WhatsAppIcon className="h-7 w-7" />

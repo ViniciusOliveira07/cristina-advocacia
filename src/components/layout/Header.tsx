@@ -1,8 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, X } from "lucide-react";
+import { Mail, Menu, Phone } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
+import { SITE } from "@/lib/site";
 
 const NAV = [
   { to: "/", label: "Home" },
@@ -27,6 +28,19 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
+      <div className="hidden border-b border-border bg-ink text-white/80 lg:block">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2 text-xs">
+          <div className="flex items-center gap-6">
+            <a href={`tel:${SITE.phoneIntl}`} className="flex items-center gap-1.5 hover:text-white">
+              <Phone className="h-3.5 w-3.5" /> {SITE.phoneDisplay}
+            </a>
+            <a href={`mailto:${SITE.email}`} className="flex items-center gap-1.5 hover:text-white">
+              <Mail className="h-3.5 w-3.5" /> {SITE.email}
+            </a>
+          </div>
+          <p className="tracking-wide text-white/60">{SITE.oab}</p>
+        </div>
+      </div>
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:h-20">
         <Logo />
 

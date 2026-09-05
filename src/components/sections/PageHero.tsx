@@ -56,7 +56,7 @@ export function PageHero({
                 <span className="font-sans text-sm text-ink-muted/60">{index}</span>
               )}
             </div>
-            <h1 className="mt-2 font-sans text-3xl text-ink sm:text-4xl lg:text-[2.75rem]">
+            <h1 className="mt-2 font-sans text-4xl leading-[1.1] text-ink sm:text-5xl lg:text-[3.25rem]">
               {title}
             </h1>
             {subtitle && (
